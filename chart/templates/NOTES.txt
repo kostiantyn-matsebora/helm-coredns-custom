@@ -1,0 +1,4 @@
+To update dns configuration, coredns needs to be restared.
+You can use following command for this:
+
+`kubectl rollout restart deployment coredns -n kube-system`

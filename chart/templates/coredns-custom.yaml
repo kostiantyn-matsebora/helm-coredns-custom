@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: coredns-custom
+  namespace: kube-system
+  labels:
+    {{- include "coredns-custom.labels" . | nindent 4 }}
+data:
+    local.override: |
+      hosts /etc/coredns/NodeHosts {
+        {{- range .Values.hosts }}
+        {{ .ip }} {{ .name }} 
+        {{- end }}
+        ttl 60
+        reload 15s
+        fallthrough
+      }

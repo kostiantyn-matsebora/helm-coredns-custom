@@ -1,0 +1,6 @@
+# Each element should contain name and ip fields
+# Example:
+# hosts:
+#    - name: longhorn.local
+#      ip : 192.168.2.100
+hosts: []
