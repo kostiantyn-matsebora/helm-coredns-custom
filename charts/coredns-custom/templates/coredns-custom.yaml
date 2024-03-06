@@ -6,7 +6,8 @@ metadata:
   labels:
     {{- include "coredns-custom.labels" . | nindent 4 }}
 data:
-    local.override: |
+{{- if .Values.hosts }}
+    hosts.override: |
       hosts /etc/coredns/NodeHosts {
         {{- range .Values.hosts }}
         {{ .ip }} {{ .name }} 
@@ -15,3 +16,8 @@ data:
         reload 15s
         fallthrough
       }
+{{- end }}
+
+{{- with .Values.servers }}
+{{ toYaml . | nindent 4}}    
+{{- end }}
