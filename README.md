@@ -4,7 +4,7 @@ Helm chart provides custom configuration for CoreDNS.
 
 More information about the feature itself can be found here https://learn.microsoft.com/en-us/azure/aks/coredns-custom
 
-For now supports only adding hosts.
+For now, it supports only adding hosts.
 
 ## Configuration
 
