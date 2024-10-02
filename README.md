@@ -1,5 +1,7 @@
 # Core DNS custom configuration
 
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=kostiantyn-matsebora_helm-coredns-custom&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=kostiantyn-matsebora_helm-coredns-custom)
+
 Helm chart provides custom configuration for CoreDNS.
 
 More information about the feature itself can be found here https://learn.microsoft.com/en-us/azure/aks/coredns-custom
