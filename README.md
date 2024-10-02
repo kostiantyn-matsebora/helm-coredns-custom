@@ -32,8 +32,7 @@ Install/upgrade helm chart using your custom values:
 
 ```bash
 
-# oauth2-proxy
-helm upgrade oauth2-proxy kostiantyn-matsebora/simple-oauth2-proxy --install --values ./custom-values.yaml
+helm upgrade oauth2-proxy kostiantyn-matsebora/helm-coredns-custom --install --values ./custom-values.yaml
 
 ```
 
