@@ -19,3 +19,33 @@ Example:
         - name: vault.local
             ip: 192.168.2.100
 ```
+
+## Usage
+
+Add helm [repository](https://kostiantyn-matsebora.github.io/helm-charts/) first:
+
+```bash
+helm repo add kostiantyn-matsebora https://kostiantyn-matsebora.github.io/helm-charts/
+```
+
+Install/upgrade helm chart using your custom values:
+
+```bash
+
+# oauth2-proxy
+helm upgrade oauth2-proxy kostiantyn-matsebora/simple-oauth2-proxy --install --values ./custom-values.yaml
+
+```
+
+## Contributing
+
+If you experience any issues, have a question or a suggestion, or if you wish
+to contribute, feel free to [open an issue][issues] or
+[start a discussion][discussions].
+
+[issues]: https://github.com/kostiantyn-matsebora/helm-coredns-custom/issues
+[discussions]: https://github.com/kostiantyn-matsebora/helm-coredns-custom/discussions
+
+## License
+
+[`MIT License`](../LICENSE)
